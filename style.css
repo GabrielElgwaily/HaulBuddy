@@ -67,3 +67,7 @@ h1 {
     color: #555;
     text-decoration: none;
 }
+
+.signup-link .underline {
+    text-decoration: underline;
+}
