@@ -91,3 +91,7 @@ h1 {
 .signup-link .underline {
     text-decoration: underline;
 }
+
+.login-link .underline {
+    text-decoration: underline;
+}
