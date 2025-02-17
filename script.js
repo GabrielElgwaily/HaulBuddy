@@ -51,7 +51,7 @@ if (signupButton) {
 };
 
 // Handle Logout
-const logoutButton = document.getElementById("logout");
+const logoutButton = document.querySelector(".logout-button");
 if (logoutButton) {
     logoutButton.addEventListener("click", async () => {
         await supabase.auth.signOut();
