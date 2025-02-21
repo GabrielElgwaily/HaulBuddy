@@ -30,8 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function logout() {
-        await supabase.auth.signOut();
-        window.location.href = "index.html";
+        const { error } = await supabase.auth.signOut();
+        if (!error) {
+            window.location.replace("index.html"); // Ensure redirect happens
+        }
     }
 
     const loginButton = document.querySelector(".login-button");
